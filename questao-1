@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=;, initial-scale=1.0">
+    <title>Página Pessoal</title>
+    <link rel="stylesheet" href=styles.css>
+    <img src="sidverstappen.jpg">
+</head>
+
+<body>
+<div class="caixa">
+
+    <h1>Bruno Sousa</h1>
+
+    <h2>Desenvolvedor</h2>
+
+    <p>Olá, meu nome é Bruno Henrique Silva de Sousa, sou apaixonado por tecnologia de desenvolvimento.
+        Tenho experiência em HTML, CSS e JavaScript, e minha meta é se tornar um programador FullStack.
+    </p>
+
+    <p class="linguagens">HTML CSS JavaScript</p>
+
+    <p class="sociais">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+
+    <div class="links">
+        <a href="https://www.linkedin.com/in/bruno-henrique-22a356240/">Linkedin</a>
+        <a href="https://github.com/IlusionMTR">GitHub</a>
+        <a href="https://www.instagram.com/brunoh.s.sousa/">Instagram</a>
+
+</div>
+
+<style>
+    * {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img {
+        height: 300%;
+        border-radius: 20%;
+        border: 7px solid green;
+    }
+
+    h1 {
+        color: darkgreen;
+        font-size: 300%;
+    }
+
+    h2 {
+        color: green;
+        font-size: 200%;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .tag {
+        display: inline-block;
+        background-color: green;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: bold;
+         margin: 10px;
+    }
+
+    .links {
+        color: green;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    .links a {
+    display: inline-block;
+    margin: 0 15px;
+    }
+
+    .links:hover {
+        text-decoration: underline;
+    }
+    </style>
+</body>
+
+</html>
