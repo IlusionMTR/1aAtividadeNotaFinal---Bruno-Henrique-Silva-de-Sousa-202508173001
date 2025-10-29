@@ -41,7 +41,7 @@
         h1 {
             color: black;
             margin-bottom: 20px;
-            font-weight: 300;
+            font-weight: 300px;
             font-size: 1.8em;
         }
 
@@ -100,8 +100,29 @@
 
             const imc = peso / (altura * altura);
             const imcFixado = imc.toFixed(2);
+            let classificacao = "";
+            let mensagem = "";
 
-            document.getElementById('resultado').textContent = `Seu IMC é: ${imcFixado}`;
+            if (imc < 18.5) {
+                classificacao = "Palito";
+                mensagem = ("Vai comer algo, plmdd")
+            } else if (imc >= 18.5 && imc <= 24.9) {
+                classificacao = "Normal";
+                mensagem = ("Finalmente um normal")
+            } else if (imc >= 25 && imc <= 29.9) {
+                classificacao = "Gordola";
+                mensagem = ("Trooopaa do Gordãooo")
+            } else {
+                imc >= 30
+                classificacao = "Titanic";
+                mensagem = ("Academia q é bom nada né")
+            }
+
+        document.getElementById('resultado').innerHTML = `
+            Seu IMC é: ${imcFixado}<br>
+            Classificação: ${classificacao}<br>
+            Mensagem : ${mensagem}
+        `;
         }
     </script>
 </body>
